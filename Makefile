@@ -51,10 +51,10 @@ ifeq ($(HOST_OS),Darwin)
     EMBEDDED_RANLIB         ?= ranlib
 else
 ifeq ($(HOST_OS),Linux)
-    EMBEDDED_CC             ?= $(CLANG)
-    EMBEDDED_LD             ?= lld
-    EMBEDDED_AR             ?= llvm-ar
-    EMBEDDED_RANLIB         ?= llvm-ranlib
+    EMBEDDED_CC             ?= /home/alyxandra/opt/ios-arm64e-clang-toolchain/bin/clang
+    EMBEDDED_LD             ?= /home/alyxandra/opt/ios-arm64e-clang-toolchain/bin/ld
+    EMBEDDED_AR             ?= /home/alyxandra/opt/ios-arm64e-clang-toolchain/bin/llvm-ar
+    EMBEDDED_RANLIB         ?= /home/alyxandra/opt/ios-arm64e-clang-toolchain/bin/llvm-ranlib
 endif
 endif
 
