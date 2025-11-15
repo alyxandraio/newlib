@@ -121,7 +121,7 @@ $(BUILD) $(ARCH)/fixup:
 
 clean:
 	rm -rf $(ARCH)
-	@test -f $(BUILD)/Makefile && $(MAKE) -C $(BUILD) clean
+	rm -rf $(BUILD)
 
 distclean:
 	rm -rf $(BUILD) $(ARCH)
